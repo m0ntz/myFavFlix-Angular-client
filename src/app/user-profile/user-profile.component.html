@@ -1,5 +1,5 @@
 <div class="profile">
-
+  <app-navbar></app-navbar>
 
   <!-- <h1 class="profile-card-header">My Profile</h1> -->
   <mat-card class="info-card">
@@ -9,6 +9,7 @@
 
     <!-- User Info -->
     <mat-card-content>
+
       <div>
         <b>Username: </b>{{user}}
       </div>
@@ -18,7 +19,7 @@
       </div>
 
       <div>
-        <b>Birthday: </b>{{birthday}}
+        <b>Birthday: </b>{{birthday| date}}
       </div>
     </mat-card-content>
   </mat-card>
@@ -43,11 +44,6 @@
         <mat-label>Email</mat-label>
         <input matInput [(ngModel)]="updatedUser.Email" type="email" value="{{ updatedUser.Email }}" name="Email"
           required />
-      </mat-form-field>
-      <mat-form-field>
-        <mat-label>Birthday</mat-label>
-        <input matInput [(ngModel)]="updatedUser.Birthday" type="date" value="{{ updatedUser.Birthday | date }}"
-          name="Birthday" />
       </mat-form-field>
     </form>
   </mat-card-content>
