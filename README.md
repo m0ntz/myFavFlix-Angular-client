@@ -27,7 +27,7 @@ particular genre of the movie will be displayed.
 can learn more about movies I’ve watched or am interested in.
 - As a user, I want to be able to create a profile so I can save data about my favorite movies
 
-
+## Development Enviroment
 ### Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
