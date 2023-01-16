@@ -1,0 +1,18 @@
+<mat-card class="director-dialog">
+  <mat-card-header class="genre-dialog-header">
+    <mat-card-title class="director-dialog-title">{{ data.Name }}</mat-card-title>
+
+    <mat-card-actions class="director-actions">
+      <button class="btn-dialog-close" mat-icon-button aria-label="Close the director details button" mat-dialog-close>
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-card-actions>
+
+  </mat-card-header>
+  <mat-dialog-content class="director-dialog-content">
+    <b>Birthday: </b>{{ data.Birth }}
+    <br />
+    <br />
+    <b>Bio: </b>{{ data.Bio }}
+  </mat-dialog-content>
+</mat-card>
