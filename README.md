@@ -1,4 +1,4 @@
-# FavFlixAngularClient
+# FavFlix Angular (client-side)
 
 ## Description
 A single-page, responsive movie app built with Angular, with routing and several interface views based on its existing [server-side code](https://github.com/m0ntz/movie-api) (REST API and database).
