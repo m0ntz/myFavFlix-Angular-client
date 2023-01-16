@@ -15,7 +15,9 @@ import { MovieDetailsComponent } from '../movie-details/movie-details.component'
 })
 export class MovieCardComponent {
   movies: any[] = [];
-  favoriteMovies: any[] = [];
+  FavoriteMovies: any[] = [];
+  allMovies: any[] = [];
+
   constructor(
     public fetchApiData: UserRegistrationService,
     public dialog: MatDialog,
@@ -49,7 +51,7 @@ export class MovieCardComponent {
   }
 
   movieIsFavorite(movieId: string): boolean {
-    return this.favoriteMovies.includes(movieId);
+    return this.FavoriteMovies.includes(movieId);
   }
 
   toggleFavorite(movieId: string): void {
@@ -61,9 +63,9 @@ export class MovieCardComponent {
   }
 
   getFavoriteMovies(): void {
-    this.fetchApiData.getFavoriteMovies().subscribe((result: any) => {
-      this.favoriteMovies = result;
-      console.log(this.favoriteMovies);
+    this.fetchApiData.getUser().subscribe((result: any) => {
+      this.FavoriteMovies = result.FavoriteMovies;
+      console.log(this.FavoriteMovies);
     });
   }
 
