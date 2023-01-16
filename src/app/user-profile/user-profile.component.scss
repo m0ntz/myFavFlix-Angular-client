@@ -1,0 +1,53 @@
+:host {
+  mat-card {
+    max-width: 600px;
+    margin: 45px auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    // box-shadow: 0 10px 30px $boxShadowColor;
+    background-color: black;
+    justify-content: space-evenly;
+  }
+  .profile {
+    background-color: black;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(174, 173, 173);
+  }
+
+  .profile-info {
+    font-weight: 500;
+    color: #fffcf2;
+    font-size: 20px;
+  }
+
+  .profile-update {
+    margin: 70px;
+  }
+
+  mat-card-content {
+    font-size: 17px;
+  }
+
+  mat-card-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: rgb(174, 173, 173);
+  }
+
+  mat-form-field {
+    padding-right: 8px;
+  }
+
+  mat-card-actions {
+    margin-right: 50px;
+  }
+
+  button {
+    background-color: #ca6702;
+    margin-right: 15px;
+  }
+}

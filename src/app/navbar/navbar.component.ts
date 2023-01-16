@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
+  user = localStorage.getItem('username');
   constructor(public router: Router) {}
 
   ngOnInit(): void {}

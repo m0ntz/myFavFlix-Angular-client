@@ -2,9 +2,13 @@
   <div class="nav-bar--left">
     <button mat-button (click)="goToMovies()">FavFlix</button>
   </div>
+  <div class="greeting">
+    <p>Welcome {{user}}</p>
+  </div>
   <div class="nav-bar--right">
     <button mat-button (click)="goToProfile()" aria-hidden="false"
       aria-label="View, edit or delete your profile">Profile</button>
+
     <button mat-button (click)="logOut()" aria-hidden="false"
       aria-label="Logout and return to the welcome page">Logout</button>
   </div>

@@ -10,6 +10,7 @@ $boxShadowColor: #1e1e1e;
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 25px;
+  background-color: black;
 }
 
 .mat-card {
@@ -24,40 +25,36 @@ $boxShadowColor: #1e1e1e;
   padding: 20px 3px;
 }
 
-.mat-card-header {
+mat-card-header {
   height: 90px;
   display: flex;
   align-items: center;
-  color: $textColor;
+  color: #ca6702;
 }
 
-.mat-card-title {
+mat-card-title {
   display: flex;
   max-width: 210px;
   justify-content: center;
   text-align: center;
+  font-size: 18px;
+  font-weight: 500;
 }
 
-.mat-card-subtitle {
+mat-card-subtitle {
   color: $directedColor;
   display: flex;
   justify-content: center;
   text-align: center;
+  font-size: smaller;
 }
 
 img {
   width: 200px;
-  object-fit: contain;
+  height: 300px;
 }
 
-.mat-icon-button {
-  position: absolute;
-  right: 5px;
-  top: 5px;
-  color: crimson;
-}
-
-.mat-card > .mat-card-actions {
+mat-card > mat-card-actions {
   margin-left: 0;
   padding-bottom: 0;
   display: flex;

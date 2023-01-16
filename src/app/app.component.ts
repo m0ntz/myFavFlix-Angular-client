@@ -7,8 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myFavFlix-Angular-client';
-
-  // toolbarVisible(): string | null {
-  //   return localStorage.getItem('user');
-  // }
 }

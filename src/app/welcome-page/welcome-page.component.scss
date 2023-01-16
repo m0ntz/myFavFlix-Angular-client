@@ -1,0 +1,77 @@
+$backgroundColor: black;
+$cardColor: #bb3e03;
+$textColor: #fff;
+$boxShadowColor: #403d39;
+$btnColor: #212529;
+
+* {
+  box-sizing: border-box;
+}
+
+.welcome-page {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 40px;
+  background-color: $backgroundColor;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.welcome-card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 60px;
+  box-shadow: 0 25px 35px $boxShadowColor;
+  background-color: $cardColor;
+  justify-content: space-evenly;
+}
+
+.welcome-card-header {
+  margin-bottom: 10px;
+  padding-bottom: 50px;
+  color: $textColor;
+  display: flex;
+  justify-content: center;
+}
+
+mat-card-title {
+  font-size: larger;
+}
+
+.mat-card > .mat-card-actions:last-child {
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.mat-mdc-raised-button.mat-primary {
+  background-color: $btnColor;
+  color: white;
+  padding: 10px 25px;
+}
+
+@media all and (max-width: 325px) {
+  .welcome-card {
+    width: 80%;
+    max-width: 250px;
+    aspect-ratio: 1.5/1;
+  }
+  mat-card-title {
+    font-size: 16px;
+  }
+
+  img {
+    max-width: 50%;
+    height: 80%;
+  }
+}
