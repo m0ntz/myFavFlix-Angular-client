@@ -1,7 +1,7 @@
 # FavFlix Angular 🎬🍿 (client-side)
 
 
-👉Live Version [HERE](https://m0ntz.github.io/myFavFlix-Angular-client/movies)
+👉Live Version [HERE](https://m0ntz.github.io/myFavFlix-Angular-client/welcome)
 
 ![image](https://user-images.githubusercontent.com/109100764/212938851-1d11c6e4-c005-447b-b668-de577b88d681.png)
 
