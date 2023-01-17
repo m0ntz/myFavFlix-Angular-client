@@ -1,8 +1,8 @@
 $backgroundColor: black;
-$cardColor: #bb3e03;
+$cardColor: #212529;
 $textColor: #fff;
-$boxShadowColor: #403d39;
-$btnColor: #212529;
+$boxShadowColor: #ced4da;
+$btnColor: #cc6d0c;
 
 * {
   box-sizing: border-box;
@@ -31,7 +31,7 @@ img {
   margin: auto;
   margin-top: 50px;
   padding: 60px;
-  box-shadow: 0 25px 35px $boxShadowColor;
+  box-shadow: 0 15px 35px $boxShadowColor;
   background-color: $cardColor;
   justify-content: space-evenly;
 }
