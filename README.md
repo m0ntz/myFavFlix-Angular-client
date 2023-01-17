@@ -3,7 +3,7 @@
 
 👉Live Version [HERE](https://m0ntz.github.io/myFavFlix-Angular-client/welcome)
 
-![image](https://user-images.githubusercontent.com/109100764/212938851-1d11c6e4-c005-447b-b668-de577b88d681.png)
+![image](https://user-images.githubusercontent.com/109100764/212987539-9518ee6e-089b-42fe-a29f-a334bbca8685.png)
 
 ![image](https://user-images.githubusercontent.com/109100764/212938687-de432473-9c2b-4987-b04f-00787bc5d1b8.png)
 
