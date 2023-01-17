@@ -1,5 +1,16 @@
 # FavFlix Angular 🎬🍿 (client-side)
 
+
+👉Live Version [HERE](https://m0ntz.github.io/myFavFlix-Angular-client/welcome)
+
+![image](https://user-images.githubusercontent.com/109100764/212987539-9518ee6e-089b-42fe-a29f-a334bbca8685.png)
+
+![image](https://user-images.githubusercontent.com/109100764/212938687-de432473-9c2b-4987-b04f-00787bc5d1b8.png)
+
+![image](https://user-images.githubusercontent.com/109100764/212939103-99e9fdb2-7563-40a3-b3c2-6065b6ae1f02.png)
+
+
+
 ## Description
 A single-page, responsive movie app built with Angular, with routing and several interface views based on its existing [server-side code](https://github.com/m0ntz/movie-api) (REST API and database).
 
