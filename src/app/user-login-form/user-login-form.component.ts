@@ -27,6 +27,7 @@ export class UserLoginFormComponent implements OnInit {
         // Logic for a successful user login goes here!
         console.log('loginUser', result);
         localStorage.setItem('username', result.user.Username);
+        localStorage.setItem('password', result.user.Password);
         localStorage.setItem('token', result.token);
         localStorage.setItem('email', result.user.Email);
         localStorage.setItem('birthday', result.user.Birthday);
@@ -41,10 +42,14 @@ export class UserLoginFormComponent implements OnInit {
       },
       (result) => {
         console.log(result);
-        this.snackBar.open(result, 'OK', {
+        this.snackBar.open('User not found', 'OK', {
           duration: 3000,
         });
       }
     );
+  }
+
+  closeDialog(): void {
+    this.dialogRef.close();
   }
 }

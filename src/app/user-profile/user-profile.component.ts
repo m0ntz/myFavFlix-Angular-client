@@ -18,7 +18,6 @@ export class UserProfileComponent implements OnInit {
   // initialInput: any = {};
   @Input() updatedUser = {
     Username: '',
-    Password: '',
     Email: '',
     Birthday: '',
   };
@@ -37,6 +36,7 @@ export class UserProfileComponent implements OnInit {
       console.log(result);
       localStorage.setItem('username', this.updatedUser.Username);
       localStorage.setItem('email', this.updatedUser.Email);
+      localStorage.setItem('birthday', this.updatedUser.Birthday);
       setTimeout(() => {
         location.reload();
       }, 3500);
