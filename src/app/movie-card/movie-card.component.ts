@@ -30,6 +30,11 @@ export class MovieCardComponent {
   }
 
   //All Movies
+  /**
+   * Fetch movies via API and set movies state to returned JSON file
+   * @returns array holding movies objects
+   * @function getMovies
+   */
   getMovies(): void {
     this.fetchApiData.getAllMovies().subscribe((result: any) => {
       this.movies = result;
@@ -38,22 +43,44 @@ export class MovieCardComponent {
     });
   }
 
+  /**
+   * Adds a movie to a user's favorites via an API call
+   * @param {string} movieId
+   * @function addToFavorite
+   */
   addToFavorite(movieId: string): void {
     this.fetchApiData.addFavoriteMovie(movieId).subscribe((result: any) => {
       this.getFavoriteMovies();
     });
   }
 
+  /**
+   * Removes a movie from a user's favorites via an API call
+   * @param {string} movieId
+   * @function removeFromFavorite
+   */
   removeFromFavorite(movieId: string): void {
     this.fetchApiData.removeFavoriteMovie(movieId).subscribe((result: any) => {
       this.getFavoriteMovies();
     });
   }
 
+  /**
+   * Checks if a movie is included in a user's favorite movies
+   * @param {string} movieId
+   * @returns boolean
+   * @function movieIsFavorite
+   */
   movieIsFavorite(movieId: string): boolean {
     return this.FavoriteMovies.includes(movieId);
   }
 
+  /**
+   * Marks a movie as favorite or removes it as favorite
+   * @param {string} movieId
+   * @returns boolean
+   * @function toggleFavorite
+   */
   toggleFavorite(movieId: string): void {
     if (this.movieIsFavorite(movieId)) {
       this.removeFromFavorite(movieId);
@@ -62,6 +89,11 @@ export class MovieCardComponent {
     }
   }
 
+  /**
+   * Fetch user info via API and set favorites state to returned JSON file
+   * @returns array holding IDs of favorites
+   * @function getFavorites
+   */
   getFavoriteMovies(): void {
     this.fetchApiData.getUser().subscribe((result: any) => {
       this.FavoriteMovies = result.FavoriteMovies;
@@ -70,6 +102,12 @@ export class MovieCardComponent {
   }
 
   //Genre
+
+  /**
+   * Opens genre information from GenreComponent
+   * @param {string} movie
+   * @function openGenre
+   */
   openGenre(movie: any): void {
     const { Name, Description } = movie.Genre;
     this.dialog.open(GenreComponent, {
@@ -80,6 +118,11 @@ export class MovieCardComponent {
   }
 
   //Director
+  /**
+   * Opens director information from DirectorComponent
+   * @param {string} movie
+   * @function openDirector
+   */
   openDirector(movie: any): void {
     const { Name, Birth, Bio } = movie.Director;
     this.dialog.open(DirectorComponent, {
@@ -90,6 +133,11 @@ export class MovieCardComponent {
   }
 
   //Open Movie Details aka Description
+  /**
+   * Opens movie details from MovieDetailsComponent
+   * @param {string}movie
+   * @function openMovieDetails
+   */
   openMovieDetails(movie: any): void {
     const { Title, Description } = movie;
     this.dialog.open(MovieDetailsComponent, {

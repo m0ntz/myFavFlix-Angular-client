@@ -11,6 +11,10 @@ import { Router } from '@angular/router';
 export class UserProfileComponent implements OnInit {
   initialInput: any = {};
 
+  /**
+   * Fetch user data via localStorage
+   * @returns object with user information
+   */
   user = localStorage.getItem('username');
   email = localStorage.getItem('email');
   birthday = localStorage.getItem('birthday');
@@ -31,6 +35,10 @@ export class UserProfileComponent implements OnInit {
   ngOnInit(): void {}
 
   //Update user info
+  /**
+   * Update user data, such as username, password, email, or birthday
+   * @function updateUserInfo
+   */
   updateUserInfo(): void {
     this.fetchApiData.editUser(this.updatedUser).subscribe((result) => {
       console.log(result);
@@ -47,6 +55,10 @@ export class UserProfileComponent implements OnInit {
   }
 
   //Delete user account
+  /**
+   * Delete user data for the user that is logged in
+   * @function deleteAccount
+   */
   deleteAccount(): void {
     if (
       confirm(
