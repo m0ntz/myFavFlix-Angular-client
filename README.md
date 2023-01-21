@@ -19,6 +19,7 @@ Users are able to use the app whenever they want to read information about diffe
 ## Tech Stack
 - Angular
 - TypeScript
+- TypeDoc
 
 
 ## Features
